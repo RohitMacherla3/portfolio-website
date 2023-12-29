@@ -41,22 +41,32 @@
         <div class="row">
             <div class="about-col-1">
                 <img src="images/user1.png">
+                <a href="images/my-cv1.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>Data scientist holding a Master's in Data Science from Rutgers University, expertise spanning Data Engineering, Machine Learning, and Statistical Analysis. Proficient in constructing robust data pipelines, optimizing advanced models, applying NLP techniques, and developing impactful recommendation systems. A dedicated researcher with a sharp analytical mindset, excelling in complex project execution, and leveraging a diverse skill set that includes Python, cloud technologies, and cutting-edge data science tools.</p>
-                
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Tool and Libraries</span><br>Procient: Python, MYSQL, Pandas, Numpy, PyTorch, Scikit-learn, NLP, NLTK, Matplotlib <br>Worked with: Unix, R, MongoDB, Tableau, Surprise, Tensorflow, spaCy, FastAPI, Streamlit, LLMs, Transformers</li>
-                        <li><span>Cloud Technologies</span><br>GCP(Certified Data Engineer), Databricks, BigQuery, Collibra, Informatica Cloud (IICS)</li>
-                        <li><span>Data Science Skills</span><br>Machine Learning, Deep Learning, Generative AI, Recommendations Engines, A/B Testing</li>
-                    </ul>
+                    <div class="skills-container">
+                    <div class="skills-box">
+                        <h3>Tool and Libraries</h3>
+                        <p><span>Procient:</span> Python, MYSQL, Pandas, Numpy, PyTorch, Scikit-learn, NLP, NLTK, Matplotlib</p>
+                        <p><span>Worked with:</span> Unix, R, MongoDB, Tableau, Surprise, Tensorflow, spaCy, FastAPI, Streamlit, LLMs, Transformers</p>
+                    </div>
+                    <div class="skills-box">
+                        <h3>Cloud Technologies</h3>
+                        <p>GCP(Certified Data Engineer), Databricks, BigQuery, Collibra, Informatica Cloud (IICS)</p>
+                    </div>
+                    <div class="skills-box">
+                        <h3>Data Science Skills</h3>
+                        <p>Machine Learning, Deep Learning, Generative AI, Recommendations Engines, A/B Testing</p>
+                    </div>
+                </div>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
@@ -146,7 +156,6 @@
                     <a href="https://www.instagram.com/_rohiiittttt_/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/rohitmacherla125/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <a href="images/my-cv1.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
