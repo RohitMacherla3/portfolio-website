@@ -9,7 +9,7 @@ html{
 }
 body{
     background: #080808;
-    color: #fff;
+    color: #fdfafa;
 }
 #header{
     width: 100%;
@@ -19,8 +19,18 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+
+.personal-text{
+    color: #f4f2f2;
+    padding: 0px 10%;
+}
 .container{
     padding: 10px 10%;
+    color: #fdfafa
+}
+
+.header-text{
+    padding: 0px 10%;
 }
 
 nav{
@@ -41,7 +51,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #f8f4f4;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -222,12 +232,15 @@ nav ul li a:hover::after{
 #portfolio{
     padding: 50px 0;
 }
-.work-list{
+
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-gap: 40px;
     margin-top: 50px;
 }
+
 .work{
     border-radius: 10px;
     position: relative;
