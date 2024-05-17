@@ -36,11 +36,12 @@ body{
 
     .sidemenu-container {
         position: fixed;
-        top: 0;
+        top: 33%;
         left: 0;
         width: 130px; 
-        height: 100%;
-        background-color: #565555;
+        height: 33%;
+        background-color: #ff004f;
+        padding-top: 30%;
         padding: 20px;
         box-sizing: border-box;
         z-index: 1;
@@ -477,11 +478,11 @@ nav .fas{
     nav ul{
         background: #ff004f;
         position: fixed;
-        top: 0;
+        top: 33%;
         right: -100px;
         width: 200px;
-        height: 100vh;
-        padding-top: 50px;
+        height: 33vh;
+
         z-index: 2;
         transition: left 0.5s ease-in-out;
     }
