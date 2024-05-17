@@ -26,11 +26,64 @@ body{
 }
 .container{
     padding: 10px 10%;
-    color: #fdfafa
+    color: #fdfafa;
 }
 
+#sidemenu li a {
+    font-size: 30px; 
+    font-weight: 500;
+}
+
+.sidemenu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 130px; /* Adjust the width as needed */
+    height: 100%;
+    background-color: #565555;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1; /* Ensure the menu is on top of other content */
+}
+
+#sidemenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidemenu li {
+    margin-bottom: 10px;
+}
+
+#sidemenu li a {
+    display: block;
+    text-decoration: none;
+    color: #f7f4f4;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#sidemenu li a:hover {
+    color: #f9f7f7;
+}
+
+.profile-container {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    width: 350px; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 .header-text{
-    padding: 0px 10%;
+    padding: 0px 20%;
 }
 
 nav{
