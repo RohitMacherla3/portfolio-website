@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --bg: #061018;
+  --panel: rgba(9, 18, 31, 0.78);
+  --panel-strong: rgba(5, 11, 22, 0.9);
+  --line: rgba(255, 255, 255, 0.1);
+  --text: #e7eef8;
+  --muted: #97a6ba;
+  --accent: #44d3cd;
+  --accent-warm: #f6a44d;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(68, 211, 205, 0.12), transparent 25%),
+    radial-gradient(circle at 80% 12%, rgba(246, 164, 77, 0.08), transparent 20%),
+    linear-gradient(180deg, #08121d 0%, #040b14 100%);
+  color: var(--text);
+  font-family: 'Manrope', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(68, 211, 205, 0.22);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(151, 166, 186, 0.34);
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-position: center center;
+  background-size: 70px 70px;
+  mask-image: radial-gradient(circle at center, black 52%, transparent 90%);
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(168, 235, 232, 0.86);
+}
+
+.surface-card {
+  border: 1px solid var(--line);
+  border-radius: 2rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+    var(--panel);
+  box-shadow:
+    0 16px 48px rgba(2, 8, 20, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(68, 211, 205, 0.18);
+  background: rgba(68, 211, 205, 0.08);
+  padding: 0.65rem 0.95rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #dff8f6;
+}
+
+.chip-muted {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  color: #d1dae7;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 999px;
+  padding: 0.95rem 1.4rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.button-primary {
+  border: 1px solid rgba(68, 211, 205, 0.3);
+  background: linear-gradient(135deg, rgba(68, 211, 205, 0.92), rgba(69, 135, 252, 0.82));
+  color: #02131b;
+  box-shadow: 0 14px 40px rgba(32, 165, 171, 0.28);
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+  transform: translateY(-1px);
+}
+
+.button-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+}
+
+.button-secondary:hover {
+  border-color: rgba(68, 211, 205, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
